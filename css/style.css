@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 18px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #ddd;
+}
+
+/*********** Splash Page ************************/
+header {
+  padding: 28px 18px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+header h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  /* color number */
+  margin: 10px 0 12px;
+}
+
+header img {
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+
+.address {
+  margin: 12px 0 6px;
+  font-size: 0.98rem;
+  color: #374151;
+}
+
+.tagline {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/************* Sections ********************/
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 20px 18px;
+}
+
+section h3 {
+  font-family: "Poppins", sans-serif;
+  color: #1f2937;
+  /* color number */
+  margin-bottom: 8px;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 18px;
+  row-gap: 8px;
+  margin: 0;
+}
+
+section ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+section a {
+  color: #2563eb;
+  /* color number */
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+}
